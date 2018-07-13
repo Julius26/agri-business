@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Google Map</h1>
+ <form action="" method="get" class="form group">
+ 	<br/>
+ 	<br/>
+   <label >Enter your location</label>
+   <input type="text" name="map" class="form control">
+   <br/>
+   <br/>
+    <label >Enter Mode of Transport</label>
+   <input type="text" name="mode" class="form control">
+   <br/>
+   <br/>
+
+  
+
+
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(-1.271069, 36.807905),
+    zoom:8,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var myLatlng = new google.maps.LatLng(-1.271069, 36.807905);
+console.log(myLatlng.lat(), myLatlng.lng())
+var mapOptions = {
+  zoom: 4,
+  center: myLatlng
+}
+
+var marker = new google.maps.Marker({
+    position: myLatlng,
+    title:"Start",
+    map
+});
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH94gc6hIVIjO3zutq94K0ylnhtXIlSzk&callback=myMap"></script>
+
+</body>
+</html>

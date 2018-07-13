@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Miela</title>
+	<meta charset="utf-8">
+       <script src="js/jquery.min.js"></script>
+       <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>     
+        <script src="js/bootstrap.min.js"></script>  
+       <script src="js/parallax.min.js"></script> 
+       <script src="js/wow.min.js"></script> 
+       <script src="js/jquery.easing.min.js"></script> 
+       <script src="js/fliplightbox.min.js"></script> 
+       <script src="js/functions.js"></script> 
+        <script src="js/myjequery.js"></script> 
+        <script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/jquery-ui.css">
+       <link rel="stylesheet" href="css/font-awesome.css"> 
+       <link rel="stylesheet" href="css/animate.css"> 
+
+	<style>
+		
+		
+		.navbar{
+                     letter-spacing: 4px;
+                     z-index: 9999;
+                     border: 0;
+                     font-size: 10px;
+                     border-radius: 0;
+              }	
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #424242; !important;
+}
+
+.navbar-default .navbar-toggle{
+       color: #FDD835;
+       border-color: transparent;
+
+}
+               #main{
+                     background-image: url("images/chicks.jpg");
+                     background-repeat: no-repeat;
+                     background-size: cover;
+                     padding: 20%;
+               }
+
+               #main h1{
+                     color: #DD2C00;
+                     font-size: 40px;
+                     background-color: #FFF59D;
+                       opacity: 0.4;
+               }
+
+               #main p{
+                     color: #000000;
+                     opacity: 0.6;
+
+               }
+
+             #main a{
+              text-decoration: none;
+       color: white;
+       background-color: orange;
+       padding: 1%;
+             }
+
+#main a:hover{
+background-color: grey;
+
+}
+
+#info {
+  padding-top: 5%;
+  padding-bottom: 5%
+}
+
+#info h1{
+ color: #1B5E20;
+ font-size: 50px;
+
+}
+
+#info p{
+  font-size: 23px;
+}
+
+#info a{
+  color: #009688;
+  font-size: 24px;
+}
+
+
+#aboutus {
+       padding-top: 5%;
+       padding-bottom: 5%; 
+}
+
+#aboutus h3{
+       color: #1B5E20;
+       font-size: 50px
+}
+
+#aboutus p{
+      font-size: 25px;
+}
+
+#aboutus span{
+       font-size: 200px;
+       color: #33691E;
+}
+
+#aboutus .col-md-4{
+       margin: 25px 0;
+       text-align: center;
+}
+
+
+
+
+
+#Description {
+       padding-top: 5%;
+       padding-bottom: 5%;
+}
+
+
+       #Description h1{
+
+       font-size: 50px;
+                     color: #1B5E20;
+                     font-family: Palatino, 'Palatino Linotype', serif;
+}
+
+#Description p{
+
+       font-size: 30px;
+       color: 
+
+}
+
+#desc p{
+
+       font-family: "Courier New", Courier, monospace;
+       background-color: #DD2C00;
+       color: #3E2723;
+
+}
+
+hr{
+       width: 30%;
+       border: 1px #004D40 solid;
+}
+
+
+#products {
+       padding-top: 5%;
+       padding-bottom: 5%; 
+       
+}
+#prod span{
+       color: #689F38
+}
+
+#prod h2{
+
+       font-size: 50px;
+                     color: #004D40;
+                     font-family: Palatino, 'Palatino Linotype', serif;
+}
+
+#prod p, li{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 18px;
+}
+
+#gallery {
+       padding-top: 5%;
+       padding-bottom: 5%; 
+}
+#gallery h2{
+  color: #1B5E20;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+#contact {
+       padding-top: 5%;
+       padding-bottom: 3%; 
+       background-image: url(images/FARM4.jpg);
+       background-attachment: fixed;
+}
+
+	
+       #footer{
+           background-color: #263238;
+           color: #ffffff;
+           height: 50px; 
+           padding: 1%;
+       }
+
+
+
+
+
+
+
+       </style>
+
+
+	
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container-fluid">
+              <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="">Miela</a>
+                     
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                     <li class="active"><a href="#">Home</a></li>
+                     <li><a href="#aboutus">About Miela</a></li>
+                     <li><a href="#Description">Services</a></li>
+                     <li><a href="#products">Products</a></li>
+                     <li><a href="#gallery">Gallery</a></li>
+                     <li><a href="#contact">Contacts</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                     <li><a href=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+              </ul>
+         </div>     
+       </div>
+       
+</nav>
+
+
+    <section class="row container-fluid text-center"  id="main">
+        <div class="col-md-12">
+            <h1 id="heading">Welcome to Miela Poultry and Animal Feeds</h1>
+            <p class="lead"><b>Quality Poultry and Animal Feeds. Try Miela Feeds Today and Realize your returns.</b></p> 
+
+              
+              <a href="#products">Products</a>
+             
+
+              
+        </div>      
+    </section>
+
+<section class="row container-fluid" id="info">
+  <div class="col-md-12">
+    <h1>Basic Information</h1>
+    <hr>
+    <div class="col-md-6">
+    <p>Animal <b>feed</b> is food given to domestic animals in the course of animal husbandry.In agriculture today, the nutritional needs of farm animals are well understood and may be satisfied through natural forage and fodder alone, or augmented by direct supplementation of nutrients in concentrated, controlled form.</p>
+  </div>
+  <div class="col-md-6">
+    <p> The nutritional quality of feed is influenced not only by the nutrient content, but also by many other factors such as feed presentation, hygiene, digestibility, and effect on intestinal health.</p>
+   </div>
+
+   <br/>
+   <br/>
+   <div class="col-md-8">
+    <p>There are different types of livestock feeds:</p>
+    <ol class="list-inline">
+      <li>Cattle feeding <img src="images/cow.jpg" alt="cow" style="width: 65px; height: 65px"></li>
+      <li>Bird food<img src="images/bird.jpg" alt="bird" style="width: 65px; height: 65px"></li>
+      <li>Cat food<img src="images/cat.jpg" alt="cat" style="width: 65px; height: 65px"></li>
+      <li>Dog food<img src="images/dog.jpg" alt="dog" style="width: 65px; height: 65px"></li>
+      <li>Equine nutrition<img src="images/horse.jpg" alt="horse" style="width: 65px; height: 65px"></li>
+      <li>Pet food<img src="images/pet.jpg" alt="pet" style="width: 65px; height: 65px"></li>
+      <li>Pig farming<img src="images/pig.jpg" alt="pig" style="width: 65px; height: 65px"></li>
+      <li>Poultry feed<img src="images/pol.jpg" alt="poultry" style="width: 65px; height: 65px"></li>
+      <li>Sheep husbandry<img src="images/sheep.jpg" alt="sheep" style="width: 65px; height: 65px"></li>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <p> We at <em>MIELA POULTRY AND ANIMAL FEEDS</em> are manufacturing very high quality animal feeds in quantity in order to boost your livestock production</p>
+    <a href="#Description">Get started with Miela Poultry and animal feeds</a>
+  </div>
+  </div>
+  
+</section>
+
+
+
+    <section  id="aboutus">
+<div class="container-fluid row">
+       <div class="col-md-8">
+              <h3 class="text-center">About us</h3>
+<hr>
+              <p id="aboutcart">Miela poultry and Animal feeds is a <b>certified</b> feed company that offers quality feeds to all your livestock animals including poultry and cows.<br/>MIELA POULTRY AND ANIMAL FEEDS  converts raw materials into balanced feed for animal production. 
+<br/></p>
+       </div>
+       <div class="col-md-4">
+              <span class="glyphicon glyphicon-shopping-cart" id="cart"></span>
+              <button class="btn btn-default btn-lg">Order</button>
+              
+       </div>
+       
+</div>
+<br/>
+
+<hr>
+<div class="container-fluid us">
+<div class="row">
+       <div class="col-md-4">
+              <span class="glyphicon glyphicon-globe logo" id="global"></span>
+              
+       </div>
+       
+       <div class="col-md-8">
+              <h2 style="color:#1B5E20;">Our <strong>VALUES:</strong></h2> <p>To be the preferred animal feeds manufacturer and supplier in Kenya and also Internationaly.</p>
+              <br/>
+              <h2 id="globalmission" style="color: #1B5E20;">Our <strong>MISSION:</strong></h2><p>To continuously manufacture and supply animal feeds of superior quality that will consistently give our customers value and provide stakeholders with optimum returns.
+              <p>MIELA POULTRY AND ANIMAL FEEDS strives to be a leader in sustainable business through a comprehensive range of rations for poultry and dairy feeds.</p>
+              
+       </div>
+</div> 
+       
+</div>           
+    </section>	
+
+
+
+
+
+
+	<section id="Description" class="row">
+	<div class="container">
+<h1> MIELA POULTRY AND ANIMAL FEEDS</h1>
+<hr>
+<p><b>MIELA POULTRY AND ANIMAL FEEDS</b> is a quality supplier of: <br/><i> Kenbro Day-old Chicks, Improved Indigenous(kienyeji) Day-old chicks,<br/> Four Weeks-old Chicks, plain Poultry Eggs,<br/> Fertile Poultry Hatching Eggs, Breeding Cocks(Jogoos),<br/> Miela Chick Mash, Miela Growers Mash, Miela Layers Mash,<br/> Miela Broilers Mash, Dairy feeds, Pig feeds,<br/> All poultry and Animal feeds raw material.</i></p>
+       <br/>
+       <br/>
+
+       
+       <button type="button" class="btn btn-primary btn-medium" data-toggle="collapse" data-target="#demo">Click Me!!
+              
+       </button>
+<div id="demo" class="collapse">
+     Check out our <a href="Miela Prices.html">prices</a> here.  
+</div>
+<br/>
+
+
+
+       </div>
+       <br/>
+<div class="container text-left" id="desc">
+       <p>We supply Quality Poultry and Animal Feeds for Best Results<span class="glyphicon glyphicon-thumbs-up"></span></p>
+</div> 
+    </section>
+    
+    
+
+   <section class="row text-center" id="products">
+       <div class="container">
+          
+
+
+       	<div class="row text-center" id="prod">
+                     <h2>Miela<span> Products</span></h2>
+                     <hr>
+                     <p>The Animal Nutrition Range by Miela was manufactured to meet every need of every farm animal 
+                            We sell various types of products that are certified ranging from feeds for chicks and cows using traditional raw materials and modern technology to make top quality products.<br/>
+              
+
+ 
+       		<div class="col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+                            <h2>5KGS</h2>
+       			<ul class="list-group">
+       			<li class="list-group-item list-group-item-success">Chick Mash</li>
+       			<li class="list-group-item list-group-item-success">Growers</li>
+       			<li class="list-group-item list-group-item-success">Layers Mash</li>
+       			<li class="list-group-item list-group-item-success">kienyeji Mash</li>
+                            <li class="list-group-item list-group-item-success">-</li>
+       			
+                            </ul>
+                            
+       		</div>
+       		<div class="col-sm-3">
+                            <h2>10KGS</h2>
+       			<ul class="list-group">
+                            <li class="list-group-item list-group-item-success">Chick Mash</li>
+                            <li class="list-group-item list-group-item-success">Growers</li>
+                            <li class="list-group-item list-group-item-success">Layers Mash</li>
+                            <li class="list-group-item list-group-item-success">kienyeji Mash</li>
+                            <li class="list-group-item list-group-item-success">Dairy Meal</li>
+       			</ul>
+       		</div>
+       		<div class="col-sm-3">
+                            <h2>20KGS</h2>
+       			<ul class="list-group">
+                            <li class="list-group-item list-group-item-success">Chick Mash</li>
+                            <li class="list-group-item list-group-item-success">Growers</li>
+                            <li class="list-group-item list-group-item-success">Layers Mash</li>
+                            <li class="list-group-item list-group-item-success">kienyeji Mash</li>
+                            <li class="list-group-item list-group-item-success">Dairy Meal</li>
+                     </ul>
+
+
+        		</div>
+       	<div class="col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+                     <h2>50KGS</h2>
+       		<ul class="list-group">
+                            <li class="list-group-item list-group-item-success">Chick Mash</li>
+                            <li class="list-group-item list-group-item-success">Growers</li>
+                            <li class="list-group-item list-group-item-success">Layers Mash</li>
+                            <li class="list-group-item list-group-item-success">kienyeji Mash</li>
+                            <li class="list-group-item list-group-item-success">Dairy Meal</li>
+                     </ul>
+
+       		
+       	</div>
+       	</div>
+       	
+              <div class="container text-left">
+                     <h2>MIELA EGGS</h2>
+                     <ul>
+                            <li>Plain Poultry Eggs</li>
+                            <li>Fertile Poultry hatching eggs</li>
+                     </ul>
+                     
+              </div>
+       </div>
+
+       
+       
+</section>
+
+
+
+
+<section class="row text-center" id="gallery" >
+       <h2>Services and Products (pictures)</h2>
+<hr>
+<p>Some of the services we offer and the products that we sell are displayed below</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+       <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+
+d
+       </ol>
+       <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                     <img src="images/KM50.jpg" alt="Kienyeji Mash">
+                     <div class="carousel-caption">
+                            <h3>Kienyeji Mash</h3>
+                            <p>50 Kgs.</p>
+                            
+                     </div>
+                     
+              </div>
+              <div class="item">
+      <img src="images/KM10.jpg" alt="Feeds">
+      <div class="carousel-caption">
+        <h3>Kienyeji Mash</h3>
+        <p>10 Kgs</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/LM5.jpg" alt="Feeds">
+      <div class="carousel-caption">
+        <h3>Layer Mash</h3>
+        <p>5 Kgs</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/GM20.jpg" alt="Feeds">
+      <div class="carousel-caption">
+        <h3>Growers Mash</h3>
+        <p>20 Kgs.</p>
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="images/DM20.jpg" alt="Feeds">
+      <div class="carousel-caption">
+        <h3>Dairy Meal</h3>
+        <p>20 Kgs.</p>
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="images/LM10.jpg" alt="Feeds">
+      <div class="carousel-caption">
+        <h3>Layers Mash</h3>
+        <p>10 Kgs.</p>
+      </div>
+    </div>
+       </div>
+
+       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+       
+</div>
+ 
+</section>
+	
+
+
+
+
+
+
+
+
+<section id="contact">
+	<div class="container bg-grey">
+              <h2 class="text-center">CONTACT</h2>
+              <hr>
+              <div class="row">
+                     <div class="col-md-4">
+                            <p>Contact us and we'll get back to you.</p>
+                            <p><span class="glyphicon glyphicon-map-marker"></span>off Nairobi-Mombasa Road.</p>
+                            Branch: Sultan-Hamud
+                            <br/>
+                            <br/>
+                            <p><span class="glyphicon glyphicon-phone"></span>TEL: +254-719-759-325 0R +254-733-759-325</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span>EMAIL: mielafeeds@gmail.com, P.O.BOX 62547-00200 Nairobi, Kenya.</p>
+                     
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">MPESA</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Till-Number</h4>
+        </div>
+        <div class="modal-body">
+          <p>794000.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+                     <div class="col-md-8 wow bounceIn" data-wow-delay="0.6s">
+                            <div class="row">
+                                   
+                                       <form class="form-group">
+                                          <label>Enter your name</label>
+                                          <input class="form-control" id="name" type="text" name="name" placeholder="Enter your Names" required>
+                                          <br/>
+                                          <br/>
+
+
+                                          <label>enter your Email</label>
+                                          <input class="form-control" type="email" name="email" placeholder="Enter your Email" required>
+
+                                          <br/>
+                                          <br/>
+                                          <label>Comment</label>
+
+                                          <textarea class="form-control" placeholder="Write your message" col="50" row="30">Leave us a message</textarea>
+
+                                          <br/>
+                                          <br/>
+                                            
+                                          <button class="btn btn-primary btn-lg pull-right" type="submit">Send</button>  
+
+                                  </form> 
+                            
+                            
+                            
+                     </div>
+              </div>
+		
+		
+
+</section>
+
+<footer class="row text-center" id="footer">
+       <div class="col-md-3" >
+          Copyright &copy; Miela2017. All rights reserved   
+
+       </div>
+       <div  class="col-md-6">
+             
+       </div>
+       
+       <div class="col-md-3">
+           <a href="">License</a>  /
+           <a href="">Terms</a>  
+                 
+             
+       </div>
+
+</footer>
+
+
+
+</body> 
+</html>
